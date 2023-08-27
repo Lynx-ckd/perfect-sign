@@ -1,0 +1,101 @@
+
+/*
+Mixin CSS 
+*/
+
+
+@import "_variables.scss";
+
+@mixin pg-title {
+    font: {
+        
+    }
+}
+
+@mixin pg-heading{  
+    font:{
+       
+    }
+}
+
+@mixin thin-border($color, $width) {
+    border-bottom: {
+        // color: $color;
+        // width: $width;
+        // style: solid;  
+    }
+}
+
+@mixin flexbox{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+@mixin align-items($prop){
+    -webkit-box-align: $prop;
+    -webkit-align-items: $prop;
+    -ms-flex-align: $prop;
+    align-items: $prop;
+}
+@mixin justify-content($prop){
+    -webkit-justify-content: $prop; /* Safari 6.1+ */
+    justify-content: $prop;
+}
+@mixin flex($val){
+    -webkit-box-flex: $val;
+    -webkit-flex: $val;
+    -ms-flex: $val;
+    flex: $val;
+}
+@mixin align-self($prop){
+    -webkit-align-self: $prop;
+    -ms-flex-item-align: $prop;
+    align-self: $prop;
+
+}
+@mixin inline-block{
+    display: inline-block !important;
+}
+@mixin transition($transition) {
+    -moz-transition:    $transition;
+    -o-transition:      $transition;
+    -webkit-transition: $transition;
+    transition:         $transition;
+}
+@mixin box-shadow($box-shadow) {
+    -webkit-box-shadow: $box-shadow rgba($black, 0.1);  
+    -moz-box-shadow: $box-shadow rgba($black, 0.1);
+    box-shadow: $box-shadow rgba($black, 0.1);
+}
+@mixin text-shadow($text-shadow) {
+    -webkit-text-shadow: $text-shadow rgba($black,0.2);
+    -moz-text-shadow: $text-shadow rgba($black,0.2);
+    text-shadow: $text-shadow rgba($black,0.2);
+}
+@mixin transform($transform) {
+    -moz-transform: $transform;
+    -o-transform: $transform;
+    -webkit-transform: $transform;
+    transform: $transform;
+}
+@mixin user-select-drag {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-drag:none;
+    -webkit-user-drag:none;
+    -ms-user-drag:none;
+    -moz-user-drag:none;
+}
+@mixin placeholder {
+    input::-webkit-input-placeholder {@content}
+    input:-moz-placeholder           {@content}
+    input::-moz-placeholder          {@content}
+    input:-ms-input-placeholder      {@content}  
+    textarea::-webkit-input-placeholder {@content}
+    textarea:-moz-placeholder           {@content}
+    textarea::-moz-placeholder          {@content}
+    textarea:-ms-input-placeholder      {@content}  
+} 

@@ -1,0 +1,69 @@
+@import"_variables.scss";
+
+/*buttons custom*/
+.btn-main {
+    background: $primary;
+    padding: 15px 25px;
+    color: white;
+    display: inline-block;
+    
+    border-radius: 5px;
+    
+    @include transition (linear 0.3s); 
+    &:hover {
+        background-color: #c03305;
+        color: white;
+        @include transition (linear 0.3s); 
+    }
+}
+/*images*/
+figure {
+    &.ht img{
+        height: 100%;
+    }
+    &.wd img{
+        width: 100%;
+    }
+}
+/*navbar*/
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: $primary;
+}
+.nav-link:focus-visible {
+    box-shadow: none;
+}
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none;
+}
+header .navbar-toggler {
+    padding: 0;
+    color: $primary;
+    font-size: 30px;
+}
+/*sectio gaps*/
+.section-gap {
+    padding: 90px 0;
+}
+
+.pdt {
+    padding-top: 0;
+}
+/*content*/
+.title {
+    margin-bottom: 60px;
+    h1,h2,h3,h4,h5{
+        font-weight: $semi-bold;
+        margin-bottom: 10px;
+    }
+}
+p{
+    margin: 0;
+}
+ul {
+    padding: 0;
+    li {
+        list-style: none;
+    }
+}
