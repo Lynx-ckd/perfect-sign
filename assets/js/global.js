@@ -37,7 +37,7 @@ $(document).ready(function () {
         infinite: true,
         useTransform: true,
         dots: false,
-        speed: 400,
+        speed: 1500,
         cssEase: 'cubic-bezier(0.77, 0, 0.18, 1)',
     });
    

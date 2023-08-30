@@ -405,6 +405,12 @@ footer ul li {
   margin-bottom: 20px;
 }
 
+.service-ld h1 {
+  font-size: 18px;
+  font-weight: 400;
+  padding: 0 10%;
+}
+
 .contact-wrap {
   padding: 20px;
   box-shadow: 0 0 11px 2px rgba(232, 232, 232, 0.568627451);
