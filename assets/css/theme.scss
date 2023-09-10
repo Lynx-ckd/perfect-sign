@@ -93,15 +93,15 @@ h1.custom {
 .clients {
     figure {
         box-shadow: 0 0 11px 0px #f4f4f4;
-        padding: 30px;
-    text-align: center;
+        padding: 30px 15px;
+        text-align: center;
         img{
             height: 60px;
-            filter: grayscale(1);
+            // filter: grayscale(1);
             @include transition (linear 0.3s);
         }
         &:hover img{
-            filter: grayscale(0);
+            // filter: grayscale(0);
             @include transition (linear 0.3s);  
         }
     }
