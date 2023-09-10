@@ -44,8 +44,9 @@ $(document).ready(function () {
     new VenoBox({
         selector: '.my-image-links',
         numeration: false,
-        infinigall: true,
-        share: true,
+        infinigall: false,
+        maxWidth: 'auto', 
+        share: false,
         spinner: 'rotating-plane',
         navigation: true,
     });
