@@ -45,7 +45,6 @@ $(document).ready(function () {
         selector: '.my-image-links',
         numeration: false,
         infinigall: false,
-        maxWidth: 'auto', 
         share: false,
         spinner: 'rotating-plane',
         navigation: true,
