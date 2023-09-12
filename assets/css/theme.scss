@@ -94,7 +94,7 @@ h1.custom {
 .clients {
     figure {
         box-shadow: 0 0 11px 0px #f4f4f4;
-        padding: 30px 15px;
+        padding: 30px;
         text-align: center;
         img{
             height: 60px;
@@ -108,7 +108,12 @@ h1.custom {
     }
     .client-wrapper {
         display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        justify-content: center;
+        figure {
+            // width: 30%;
+            margin: 10px;
+        }
     }
 }
 .vbox-container {
@@ -350,10 +355,6 @@ footer {
         padding-right: 0%;
     }
     .clients {
-        .client-wrapper {
-            flex-wrap: wrap;
-            justify-content: center;
-        }
         figure {
             // width: 30%;
             margin: 10px;
